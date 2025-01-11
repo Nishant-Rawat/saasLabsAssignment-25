@@ -1,7 +1,10 @@
 .table-container{
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
+    min-height: 324px;
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 
 .table-container .table-title{
@@ -25,6 +28,7 @@
 }
 
 .pagination-wrapper{
+    margin-top: 8px;
     display: flex;
     gap: 8px;
     justify-content: flex-end;

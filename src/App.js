@@ -8,9 +8,7 @@ function App() {
     <div className="App">
       <Header localeData={locale} />
       <main className="main-container">
-        <section className="kick-starter-table">
-          <KickStarterProjects localeData={locale} />
-        </section>
+        <KickStarterProjects localeData={locale} />
       </main>
     </div>
   );
