@@ -39,15 +39,14 @@ export default function KickStarterProjects({ localeData }) {
     setLoader(false);
   };
 
-  const fetchTableData = async () => {
-    setLoader(true);
-    const data = await getHighlyRatedKickStarterProjects(KICK_STARTER);
-    setTableData(data);
-    setPaginatedData(data.slice(0, rowsPerPage));
-    setLoader(false);
-  };
-
   useEffect(() => {
+    const fetchTableData = async () => {
+      setLoader(true);
+      const data = await getHighlyRatedKickStarterProjects(KICK_STARTER);
+      setTableData(data);
+      setPaginatedData(data.slice(0, rowsPerPage));
+      setLoader(false);
+    };
     fetchTableData();
   }, []);
 
